@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07DDC4DC3830A9280C31679A /* libPods-Phun App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC54367B897F1878A570804 /* libPods-Phun App.a */; };
 		A26E544F1CB5AB1500D80C89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E544E1CB5AB1500D80C89 /* main.m */; };
 		A26E54521CB5AB1500D80C89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54511CB5AB1500D80C89 /* AppDelegate.m */; };
 		A26E54551CB5AB1500D80C89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54541CB5AB1500D80C89 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		A26E545D1CB5AB1500D80C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26E545B1CB5AB1500D80C89 /* LaunchScreen.storyboard */; };
 		A26E54681CB5AB1600D80C89 /* Phun_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54671CB5AB1600D80C89 /* Phun_AppTests.m */; };
 		A26E54731CB5AB1600D80C89 /* Phun_AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54721CB5AB1600D80C89 /* Phun_AppUITests.m */; };
+		A26E54841CB5AEE300D80C89 /* APSAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54831CB5AEE300D80C89 /* APSAPIClient.m */; };
+		A26E54881CB5B22900D80C89 /* APSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54871CB5B22900D80C89 /* APSFeedViewController.m */; };
+		A26E54971CB5B55E00D80C89 /* APSFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54951CB5B55E00D80C89 /* APSFeedCollectionViewCell.m */; };
+		A26E54981CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24C5566828FEBF86D8FB43C9 /* Pods-Phun App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phun App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Phun App/Pods-Phun App.release.xcconfig"; sourceTree = "<group>"; };
+		7EC54367B897F1878A570804 /* libPods-Phun App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Phun App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E544A1CB5AB1500D80C89 /* Phun App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phun App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E544E1CB5AB1500D80C89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A26E54501CB5AB1500D80C89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,14 @@
 		A26E546E1CB5AB1600D80C89 /* Phun AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Phun AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E54721CB5AB1600D80C89 /* Phun_AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Phun_AppUITests.m; sourceTree = "<group>"; };
 		A26E54741CB5AB1600D80C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26E54821CB5AEE300D80C89 /* APSAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSAPIClient.h; sourceTree = "<group>"; };
+		A26E54831CB5AEE300D80C89 /* APSAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSAPIClient.m; sourceTree = "<group>"; };
+		A26E54861CB5B22900D80C89 /* APSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSFeedViewController.h; sourceTree = "<group>"; };
+		A26E54871CB5B22900D80C89 /* APSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSFeedViewController.m; sourceTree = "<group>"; };
+		A26E54941CB5B55E00D80C89 /* APSFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSFeedCollectionViewCell.h; sourceTree = "<group>"; };
+		A26E54951CB5B55E00D80C89 /* APSFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSFeedCollectionViewCell.m; sourceTree = "<group>"; };
+		A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APSFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4483F80D9E80547D1E50358 /* Pods-Phun App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phun App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phun App/Pods-Phun App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DDC4DC3830A9280C31679A /* libPods-Phun App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B588A9A3A908D8CD00B875 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4483F80D9E80547D1E50358 /* Pods-Phun App.debug.xcconfig */,
+				24C5566828FEBF86D8FB43C9 /* Pods-Phun App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A26E54411CB5AB1500D80C89 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				A26E54661CB5AB1600D80C89 /* Phun AppTests */,
 				A26E54711CB5AB1600D80C89 /* Phun AppUITests */,
 				A26E544B1CB5AB1500D80C89 /* Products */,
+				64B588A9A3A908D8CD00B875 /* Pods */,
+				D196417C0FC8D1F466DC5185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +128,8 @@
 		A26E544C1CB5AB1500D80C89 /* Phun App */ = {
 			isa = PBXGroup;
 			children = (
+				A26E54811CB5AEBC00D80C89 /* Networking */,
+				A26E54801CB5ACC100D80C89 /* View Controllers */,
 				A26E54501CB5AB1500D80C89 /* AppDelegate.h */,
 				A26E54511CB5AB1500D80C89 /* AppDelegate.m */,
 				A26E54531CB5AB1500D80C89 /* ViewController.h */,
@@ -140,6 +169,43 @@
 			path = "Phun AppUITests";
 			sourceTree = "<group>";
 		};
+		A26E54801CB5ACC100D80C89 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54851CB5B21A00D80C89 /* FeedViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A26E54811CB5AEBC00D80C89 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54821CB5AEE300D80C89 /* APSAPIClient.h */,
+				A26E54831CB5AEE300D80C89 /* APSAPIClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A26E54851CB5B21A00D80C89 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54861CB5B22900D80C89 /* APSFeedViewController.h */,
+				A26E54871CB5B22900D80C89 /* APSFeedViewController.m */,
+				A26E54941CB5B55E00D80C89 /* APSFeedCollectionViewCell.h */,
+				A26E54951CB5B55E00D80C89 /* APSFeedCollectionViewCell.m */,
+				A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */,
+			);
+			path = FeedViewController;
+			sourceTree = "<group>";
+		};
+		D196417C0FC8D1F466DC5185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EC54367B897F1878A570804 /* libPods-Phun App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26E54771CB5AB1600D80C89 /* Build configuration list for PBXNativeTarget "Phun App" */;
 			buildPhases = (
+				324E6D9DC046A2EDDEA1B85B /* Check Pods Manifest.lock */,
 				A26E54461CB5AB1500D80C89 /* Sources */,
 				A26E54471CB5AB1500D80C89 /* Frameworks */,
 				A26E54481CB5AB1500D80C89 /* Resources */,
+				675FD31C916AA61A16747030 /* Embed Pods Frameworks */,
+				1A55344B071D10D0AC47BE8A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +271,7 @@
 		A26E54421CB5AB1500D80C89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = APS;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Applaudo;
 				TargetAttributes = {
@@ -244,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26E545D1CB5AB1500D80C89 /* LaunchScreen.storyboard in Resources */,
+				A26E54981CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib in Resources */,
 				A26E545A1CB5AB1500D80C89 /* Assets.xcassets in Resources */,
 				A26E54581CB5AB1500D80C89 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +336,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A55344B071D10D0AC47BE8A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phun App/Pods-Phun App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		324E6D9DC046A2EDDEA1B85B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		675FD31C916AA61A16747030 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Phun App/Pods-Phun App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A26E54461CB5AB1500D80C89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,7 +391,10 @@
 			files = (
 				A26E54551CB5AB1500D80C89 /* ViewController.m in Sources */,
 				A26E54521CB5AB1500D80C89 /* AppDelegate.m in Sources */,
+				A26E54841CB5AEE300D80C89 /* APSAPIClient.m in Sources */,
 				A26E544F1CB5AB1500D80C89 /* main.m in Sources */,
+				A26E54881CB5B22900D80C89 /* APSFeedViewController.m in Sources */,
+				A26E54971CB5B55E00D80C89 /* APSFeedCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +533,27 @@
 		};
 		A26E54781CB5AB1600D80C89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4483F80D9E80547D1E50358 /* Pods-Phun App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phun App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudo.Phun-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A26E54791CB5AB1600D80C89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C5566828FEBF86D8FB43C9 /* Pods-Phun App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phun App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudo.Phun-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -496,6 +622,7 @@
 				A26E54791CB5AB1600D80C89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A26E547A1CB5AB1600D80C89 /* Build configuration list for PBXNativeTarget "Phun AppTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +631,7 @@
 				A26E547C1CB5AB1600D80C89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A26E547D1CB5AB1600D80C89 /* Build configuration list for PBXNativeTarget "Phun AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +640,7 @@
 				A26E547F1CB5AB1600D80C89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
