@@ -194,4 +194,10 @@ performed on the item
     return CGSizeMake(cellWidth, cellHeight);
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [self.collectionView.collectionViewLayout invalidateLayout];
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
+
 @end
