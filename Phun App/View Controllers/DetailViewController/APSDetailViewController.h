@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APSDetailViewController : UITableViewController
+@interface APSDetailViewController : UIViewController
+
+@property (strong, nonatomic) NSNumber *missionID;
 
 @end

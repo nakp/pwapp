@@ -6,93 +6,126 @@
 //  Copyright © 2016 Applaudo. All rights reserved.
 //
 
+#import <MagicalRecord/MagicalRecord.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import "APSFormatter.h"
+#import "APSMission.h"
+
 #import "APSDetailViewController.h"
 
-@interface APSDetailViewController ()
+@interface APSDetailViewController () <UIScrollViewDelegate>
+
+@property (strong, nonatomic) APSMission *mission;
+@property (strong, nonatomic) UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
 
 @implementation APSDetailViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (APSMission *)mission
+{
+    if (!_mission && _missionID) {
+        _mission = [APSMission MR_findFirstByAttribute:@"missionID" withValue:_missionID];
+    }
+
+    return _mission;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)setupScrollView
+{
+    if (!_scrollView && [self.view isKindOfClass:[UIScrollView class]]) {
+        _scrollView = (UIScrollView *)self.view;
+        _scrollView.alwaysBounceVertical = YES;
+        _scrollView.delegate = self;
+    }
+}
+
+#pragma mark - Data
+
+- (void)loadData:(APSMission *)mission
+{
+    static UIImage *placeholder;
+    if (!placeholder) {
+        placeholder = [UIImage imageNamed:@"placeholder"];
+    }
+
+    [self.backgroundImageView sd_setImageWithURL:[NSURL URLWithString:mission.imageURL] placeholderImage:placeholder];
+    self.dateLabel.text = [[APSFormatter localDateFormater] stringFromDate:mission.date];
+    self.titleLabel.text = mission.title;
+    self.descriptionLabel.text = mission.missionDescription;
+}
+
+#pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"Offset: %@", NSStringFromCGPoint([scrollView contentOffset]));
+}
+
+#pragma mark - Actions
+- (void)shareAction:(UIBarButtonItem *)sender
+{
+    APSMission *mission = self.mission;
+    NSArray *items =
+        @[ mission.title, [NSURL URLWithString:mission.imageURL], mission.missionDescription, mission.date ];
+
+    UIActivityViewController *activity =
+        [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        UIPopoverController *popOver = [[UIPopoverController alloc] initWithContentViewController:activity];
+        [popOver presentPopoverFromBarButtonItem:sender
+                        permittedArrowDirections:UIPopoverArrowDirectionAny
+                                        animated:YES];
+    } else {
+        [self.navigationController presentViewController:activity animated:YES completion:nil];
+    }
+}
+
+#pragma mark - ViewController Lifecycle
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    [self setupScrollView];
+    [self loadData:self.mission];
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                 target:self
+                                                                                 action:@selector(shareAction:)];
+    self.navigationItem.rightBarButtonItem = shareButton;
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    // Make the navigation bar transparent
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    // Set the navigation bar as default
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
