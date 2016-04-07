@@ -10,4 +10,6 @@
 
 @interface APSFormatter : NSObject
 
++ (NSDateFormatter *)localDateFormater;
+
 @end
