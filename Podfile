@@ -6,6 +6,7 @@
 target 'Phun App' do
     pod 'AFNetworking', '~> 3.1'
     pod 'SDWebImage', '~> 3.7'
+    pod 'MagicalRecord', '~> 2.3'
 end
 
 target 'Phun AppTests' do
