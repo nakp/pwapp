@@ -20,6 +20,12 @@
 		A26E54881CB5B22900D80C89 /* APSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54871CB5B22900D80C89 /* APSFeedViewController.m */; };
 		A26E54971CB5B55E00D80C89 /* APSFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54951CB5B55E00D80C89 /* APSFeedCollectionViewCell.m */; };
 		A26E54981CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */; };
+		A26E549C1CB5BBCB00D80C89 /* APSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E549B1CB5BBCB00D80C89 /* APSFormatter.m */; };
+		A26E54A11CB5BE1600D80C89 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A26E549F1CB5BE1600D80C89 /* Model.xcdatamodeld */; };
+		A26E54A61CB5C42600D80C89 /* _APSMission.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54A31CB5C42600D80C89 /* _APSMission.m */; };
+		A26E54A71CB5C42600D80C89 /* APSMission.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54A51CB5C42600D80C89 /* APSMission.m */; };
+		A26E54AB1CB5DEBD00D80C89 /* APSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54AA1CB5DEBD00D80C89 /* APSDetailViewController.m */; };
+		A26E54AF1CB5E05900D80C89 /* APSGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,17 @@
 		A26E54941CB5B55E00D80C89 /* APSFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSFeedCollectionViewCell.h; sourceTree = "<group>"; };
 		A26E54951CB5B55E00D80C89 /* APSFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSFeedCollectionViewCell.m; sourceTree = "<group>"; };
 		A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APSFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		A26E549A1CB5BBCB00D80C89 /* APSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSFormatter.h; sourceTree = "<group>"; };
+		A26E549B1CB5BBCB00D80C89 /* APSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSFormatter.m; sourceTree = "<group>"; };
+		A26E54A01CB5BE1600D80C89 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A26E54A21CB5C42600D80C89 /* _APSMission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _APSMission.h; sourceTree = "<group>"; };
+		A26E54A31CB5C42600D80C89 /* _APSMission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _APSMission.m; sourceTree = "<group>"; };
+		A26E54A41CB5C42600D80C89 /* APSMission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSMission.h; sourceTree = "<group>"; };
+		A26E54A51CB5C42600D80C89 /* APSMission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMission.m; sourceTree = "<group>"; };
+		A26E54A91CB5DEBD00D80C89 /* APSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSDetailViewController.h; sourceTree = "<group>"; };
+		A26E54AA1CB5DEBD00D80C89 /* APSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSDetailViewController.m; sourceTree = "<group>"; };
+		A26E54AD1CB5E05900D80C89 /* APSGradientImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSGradientImageView.h; sourceTree = "<group>"; };
+		A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSGradientImageView.m; sourceTree = "<group>"; };
 		A4483F80D9E80547D1E50358 /* Pods-Phun App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phun App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phun App/Pods-Phun App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +145,9 @@
 		A26E544C1CB5AB1500D80C89 /* Phun App */ = {
 			isa = PBXGroup;
 			children = (
+				A26E54AC1CB5E04000D80C89 /* Views */,
+				A26E549E1CB5BDFD00D80C89 /* Model */,
+				A26E54991CB5BBBC00D80C89 /* Utilities */,
 				A26E54811CB5AEBC00D80C89 /* Networking */,
 				A26E54801CB5ACC100D80C89 /* View Controllers */,
 				A26E54501CB5AB1500D80C89 /* AppDelegate.h */,
@@ -172,6 +192,7 @@
 		A26E54801CB5ACC100D80C89 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A26E54A81CB5DEAC00D80C89 /* DetailViewController */,
 				A26E54851CB5B21A00D80C89 /* FeedViewController */,
 			);
 			path = "View Controllers";
@@ -196,6 +217,45 @@
 				A26E54961CB5B55E00D80C89 /* APSFeedCollectionViewCell.xib */,
 			);
 			path = FeedViewController;
+			sourceTree = "<group>";
+		};
+		A26E54991CB5BBBC00D80C89 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A26E549A1CB5BBCB00D80C89 /* APSFormatter.h */,
+				A26E549B1CB5BBCB00D80C89 /* APSFormatter.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A26E549E1CB5BDFD00D80C89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54A21CB5C42600D80C89 /* _APSMission.h */,
+				A26E54A31CB5C42600D80C89 /* _APSMission.m */,
+				A26E54A41CB5C42600D80C89 /* APSMission.h */,
+				A26E54A51CB5C42600D80C89 /* APSMission.m */,
+				A26E549F1CB5BE1600D80C89 /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A26E54A81CB5DEAC00D80C89 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54A91CB5DEBD00D80C89 /* APSDetailViewController.h */,
+				A26E54AA1CB5DEBD00D80C89 /* APSDetailViewController.m */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		A26E54AC1CB5E04000D80C89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A26E54AD1CB5E05900D80C89 /* APSGradientImageView.h */,
+				A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D196417C0FC8D1F466DC5185 /* Frameworks */ = {
@@ -392,9 +452,15 @@
 				A26E54551CB5AB1500D80C89 /* ViewController.m in Sources */,
 				A26E54521CB5AB1500D80C89 /* AppDelegate.m in Sources */,
 				A26E54841CB5AEE300D80C89 /* APSAPIClient.m in Sources */,
+				A26E54A11CB5BE1600D80C89 /* Model.xcdatamodeld in Sources */,
+				A26E54A61CB5C42600D80C89 /* _APSMission.m in Sources */,
+				A26E54AF1CB5E05900D80C89 /* APSGradientImageView.m in Sources */,
+				A26E549C1CB5BBCB00D80C89 /* APSFormatter.m in Sources */,
 				A26E544F1CB5AB1500D80C89 /* main.m in Sources */,
 				A26E54881CB5B22900D80C89 /* APSFeedViewController.m in Sources */,
 				A26E54971CB5B55E00D80C89 /* APSFeedCollectionViewCell.m in Sources */,
+				A26E54A71CB5C42600D80C89 /* APSMission.m in Sources */,
+				A26E54AB1CB5DEBD00D80C89 /* APSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phun App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudo.Phun-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phun App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applaudo.Phun-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,6 +711,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A26E549F1CB5BE1600D80C89 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A26E54A01CB5BE1600D80C89 /* Model.xcdatamodel */,
+			);
+			currentVersion = A26E54A01CB5BE1600D80C89 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A26E54421CB5AB1500D80C89 /* Project object */;
 }
