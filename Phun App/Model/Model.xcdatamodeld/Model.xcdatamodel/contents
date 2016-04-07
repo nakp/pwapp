@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
-    <elements/>
+    <entity name="Mission" representedClassName="APSMission" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES">
+            <userInfo>
+                <entry key="dateFormat" value="yyyy-MM-dd'T'HH:mm:ss.sssz"/>
+            </userInfo>
+        </attribute>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="image"/>
+            </userInfo>
+        </attribute>
+        <attribute name="locationLineOne" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="locationline1"/>
+            </userInfo>
+        </attribute>
+        <attribute name="locationLineTwo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="locationline2"/>
+            </userInfo>
+        </attribute>
+        <attribute name="missionDescription" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="description"/>
+            </userInfo>
+        </attribute>
+        <attribute name="missionID" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Mission" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
 </model>
