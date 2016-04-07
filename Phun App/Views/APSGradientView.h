@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APSGradientImageView : UIImageView
+@interface APSGradientView : UIView
 
 @end

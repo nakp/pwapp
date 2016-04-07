@@ -6,15 +6,15 @@
 //  Copyright © 2016 Applaudo. All rights reserved.
 //
 
-#import "APSGradientImageView.h"
+#import "APSGradientView.h"
 
-@interface APSGradientImageView ()
+@interface APSGradientView ()
 
 @property (strong, nonatomic) CAGradientLayer *gradientLayer;
 
 @end
 
-@implementation APSGradientImageView
+@implementation APSGradientView
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -34,24 +34,6 @@
     return self;
 }
 
-- (instancetype)initWithImage:(UIImage *)image
-{
-    self = [super initWithImage:image];
-    if (self) {
-        [self addGradient];
-    }
-    return self;
-}
-
-- (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage
-{
-    self = [super initWithImage:image highlightedImage:highlightedImage];
-    if (self) {
-        [self addGradient];
-    }
-    return self;
-}
-
 - (void)addGradient
 {
     // Agregar gradiente a partir del 40% de la imagen hasta el final
@@ -60,7 +42,7 @@
     gradientLayer.frame = self.bounds;
     gradientLayer.startPoint = CGPointMake(0, 0);
     gradientLayer.endPoint = CGPointMake(0, 1);
-    gradientLayer.colors = @[ (id)[UIColor clearColor].CGColor, (id)[UIColor whiteColor].CGColor ];
+    gradientLayer.colors = @[ (id)[UIColor colorWithWhite:1 alpha:0].CGColor, (id)[UIColor whiteColor].CGColor ];
     [self.layer addSublayer:gradientLayer];
 }
 
