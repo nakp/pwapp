@@ -10,4 +10,10 @@
 
 @interface APSFeedCollectionViewCell : UICollectionViewCell
 
+- (void)setDate:(NSDate *)date
+              title:(NSString *)title
+    locationLineOne:(NSString *)locationLineOne
+    locationLineTwo:(NSString *)locationLineTwo
+           imageURL:(NSString *)imageURL;
+
 @end
