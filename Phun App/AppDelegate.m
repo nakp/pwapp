@@ -5,6 +5,7 @@
 //  Created by Tomás Figueroa on 4/6/16.
 //  Copyright © 2016 Applaudo. All rights reserved.
 //
+#import <MagicalRecord/MagicalRecord.h>
 
 #import "AppDelegate.h"
 
@@ -16,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Model"];
+
     // Override point for customization after application launch.
     return YES;
 }
