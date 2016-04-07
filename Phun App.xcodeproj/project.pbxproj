@@ -24,7 +24,7 @@
 		A26E54A61CB5C42600D80C89 /* _APSMission.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54A31CB5C42600D80C89 /* _APSMission.m */; };
 		A26E54A71CB5C42600D80C89 /* APSMission.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54A51CB5C42600D80C89 /* APSMission.m */; };
 		A26E54AB1CB5DEBD00D80C89 /* APSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54AA1CB5DEBD00D80C89 /* APSDetailViewController.m */; };
-		A26E54AF1CB5E05900D80C89 /* APSGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */; };
+		A26E54AF1CB5E05900D80C89 /* APSGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E54AE1CB5E05900D80C89 /* APSGradientView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,8 @@
 		A26E54A51CB5C42600D80C89 /* APSMission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSMission.m; sourceTree = "<group>"; };
 		A26E54A91CB5DEBD00D80C89 /* APSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSDetailViewController.h; sourceTree = "<group>"; };
 		A26E54AA1CB5DEBD00D80C89 /* APSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSDetailViewController.m; sourceTree = "<group>"; };
-		A26E54AD1CB5E05900D80C89 /* APSGradientImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSGradientImageView.h; sourceTree = "<group>"; };
-		A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSGradientImageView.m; sourceTree = "<group>"; };
+		A26E54AD1CB5E05900D80C89 /* APSGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APSGradientView.h; sourceTree = "<group>"; };
+		A26E54AE1CB5E05900D80C89 /* APSGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSGradientView.m; sourceTree = "<group>"; };
 		A4483F80D9E80547D1E50358 /* Pods-Phun App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phun App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Phun App/Pods-Phun App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,8 +247,8 @@
 			children = (
 				A26E54561CB5AB1500D80C89 /* Main.storyboard */,
 				A26E545B1CB5AB1500D80C89 /* LaunchScreen.storyboard */,
-				A26E54AD1CB5E05900D80C89 /* APSGradientImageView.h */,
-				A26E54AE1CB5E05900D80C89 /* APSGradientImageView.m */,
+				A26E54AD1CB5E05900D80C89 /* APSGradientView.h */,
+				A26E54AE1CB5E05900D80C89 /* APSGradientView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -448,7 +448,7 @@
 				A26E54841CB5AEE300D80C89 /* APSAPIClient.m in Sources */,
 				A26E54A11CB5BE1600D80C89 /* Model.xcdatamodeld in Sources */,
 				A26E54A61CB5C42600D80C89 /* _APSMission.m in Sources */,
-				A26E54AF1CB5E05900D80C89 /* APSGradientImageView.m in Sources */,
+				A26E54AF1CB5E05900D80C89 /* APSGradientView.m in Sources */,
 				A26E549C1CB5BBCB00D80C89 /* APSFormatter.m in Sources */,
 				A26E544F1CB5AB1500D80C89 /* main.m in Sources */,
 				A26E54881CB5B22900D80C89 /* APSFeedViewController.m in Sources */,
